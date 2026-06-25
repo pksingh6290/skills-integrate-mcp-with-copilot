@@ -80,6 +80,9 @@ document.addEventListener("DOMContentLoaded", () => {
         )}/unregister?email=${encodeURIComponent(email)}`,
         {
           method: "DELETE",
+          headers: {
+            "X-CSRF-Token": "mshs-csrf-token-2026",
+          },
         }
       );
 
@@ -124,6 +127,9 @@ document.addEventListener("DOMContentLoaded", () => {
         )}/signup?email=${encodeURIComponent(email)}`,
         {
           method: "POST",
+          headers: {
+            "X-CSRF-Token": "mshs-csrf-token-2026",
+          },
         }
       );
 
